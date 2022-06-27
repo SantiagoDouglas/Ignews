@@ -2,7 +2,7 @@ import { ActiveLink } from '../ActiveLink'
 import { SignInButton } from '../SignInButton'
 import Image from 'next/image'
 
-import styles from '../Header/styles.module.scss'
+import styles from './styles.module.scss'
 
 export function Header() {
     return (
