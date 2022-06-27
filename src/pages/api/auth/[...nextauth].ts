@@ -6,6 +6,7 @@ import { signIn } from "next-auth/react"
 
 export default NextAuth({
 
+  secret: process.env.NEXTAUTH_URL,
   providers: [
     GithubProvider({
       clientId: process.env.GITHUB_CLIENT_ID,
