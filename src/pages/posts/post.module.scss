@@ -11,7 +11,7 @@
     h1 {
         font-size: 3.5rem;
         font-weight: 900;
-        color: var(--cyan-500)
+        // color: var(--yellow-500)
     }
 
     time {
@@ -41,12 +41,12 @@
         
         a {
             text-decoration: underline;
-            text-decoration-color: var(--cyan-500);
+            // text-decoration-color: var(--cyan-500);
 
             transition: color 0.2s;
 
             &:hover {
-                color: var(--cyan-500)
+                color: var(--yellow-500)
             }
         }
 
