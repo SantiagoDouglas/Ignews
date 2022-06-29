@@ -1,0 +1,15 @@
+.buttonBackToTop {
+  padding: 0.8rem;
+  background-color: var(--yellow-500);
+  border-radius: 50%;
+  position: fixed;
+  bottom: 1rem;
+  right: 1rem;  
+  
+  cursor: pointer;
+  transition: background-color 0.2s;
+
+  &:hover  {
+    background-color: var(--yellow-700)
+  }  
+}

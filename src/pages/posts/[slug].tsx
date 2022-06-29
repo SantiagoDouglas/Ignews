@@ -4,9 +4,9 @@ import { getSession } from "next-auth/react"
 import { RichText } from "prismic-dom"
 
 import { getPrismicClient } from "../../services/prismic"
+import { ScrollToTopButton } from "../../components/ScrollToTopButton"
 
 import styles from './post.module.scss'
-
 interface PostProps {
     post: {
         slug: string;
@@ -32,7 +32,9 @@ export default function Post({ post }: PostProps) {
                         dangerouslySetInnerHTML={{ __html: post.content }} 
                     />
                 </article>
-            </main>        
+            </main>
+
+            <ScrollToTopButton />      
         </>
     )
 }

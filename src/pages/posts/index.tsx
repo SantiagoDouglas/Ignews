@@ -1,12 +1,13 @@
 import { GetStaticProps } from 'next'
 import Head from "next/head";
+import Link from 'next/link';
 import Prismic from '@prismicio/client'
 import { RichText } from 'prismic-dom'
 
 import { getPrismicClient } from '../../services/prismic';
 
 import styles from './styles.module.scss'
-import Link from 'next/link';
+import { ScrollToTopButton } from '../../components/ScrollToTopButton';
 
 type Post = {
     slug: string;
@@ -14,19 +15,18 @@ type Post = {
     excerpt: string;
     updatedAt: string;
 }
-
 interface PostsProps {
     posts: Post[]
 }
 
-export default function Post({ posts }: PostsProps) {
+export default function Post({ posts }: PostsProps) {  
     return (
         <>
             <Head>
                 <title>Posts | Ignews</title>
             </Head>
             
-            <main className={styles.container}>
+            <main id="container" className={styles.container}>
                 <div className={styles.posts}>
                     { posts.map(post => (
                         <Link key={post.slug} href={`/posts/preview/${post.slug}`}>
@@ -39,6 +39,8 @@ export default function Post({ posts }: PostsProps) {
                     ))}
                 </div>
             </main>
+
+            <ScrollToTopButton />
         </>
     )
 }

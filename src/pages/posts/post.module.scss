@@ -1,7 +1,8 @@
 .container {
     max-width: 1120px;
     margin: 0 auto;
-    padding: 0 2rem;    
+    padding: 0 2rem;
+    
 }
 
 .post {
@@ -83,8 +84,9 @@
                 text-decoration: underline;
             }
         }
-    }
+    }    
 }
+
 
 @media screen and (max-width: 768px) {
     .container {
