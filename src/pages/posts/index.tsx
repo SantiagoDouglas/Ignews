@@ -25,6 +25,7 @@ export default function Post({ posts }: PostsProps) {
             <Head>
                 <title>Posts | Ignews</title>
             </Head>
+            
             <main className={styles.container}>
                 <div className={styles.posts}>
                     { posts.map(post => (
