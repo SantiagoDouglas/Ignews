@@ -84,7 +84,16 @@
 }
 
 @media screen and (max-width: 768px) {
+    .container {
+        max-width: 720px;
+        margin: 0 auto;
+        padding: 0 2rem;    
+    }
+
     .post {
+        max-width: 580px;
+        margin: 5rem auto 0;
+
         h1 {
             font-size: 3rem;
         }
