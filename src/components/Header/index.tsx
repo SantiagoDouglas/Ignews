@@ -69,7 +69,7 @@ export function Header() {
                         </ActiveLink>
                     </nav>
 
-                    <footer style={{ position: 'absolute', bottom: 50 }}>
+                    <footer style={{ position: 'absolute', bottom: 80 }}>
                         <SignInButton />                
                     </footer>              
                 </Drawer>
