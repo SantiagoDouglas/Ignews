@@ -26,6 +26,10 @@
         font-size: 1.125rem;
         color: var(--gray-100);
 
+        img {
+            max-width: 100%;
+        }
+
         p, ul {
             margin: 1.5rem 0;
         }
@@ -92,12 +96,15 @@
     .post {
         margin: 3rem auto 0;
 
-        h1 {
-            font-size: 3rem;
-        }
+        .postContent {
 
-        pre {            
-            white-space: pre-wrap;
+            h1 {
+                font-size: 3rem;
+            }
+    
+            pre {            
+                white-space: pre-wrap;
+            }
         }
 
         .continueReading {
