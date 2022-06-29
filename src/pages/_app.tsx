@@ -1,7 +1,7 @@
 import { AppProps } from 'next/app'
 import { Header } from '../components/Header'
 import { SessionProvider } from 'next-auth/react'
-
+import 'react-modern-drawer/dist/index.css'
 import '../styles/global.scss'
 
 function MyApp({ Component, pageProps }: AppProps) {
