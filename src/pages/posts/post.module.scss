@@ -11,7 +11,6 @@
     h1 {
         font-size: 3.5rem;
         font-weight: 900;
-        // color: var(--yellow-500)
     }
 
     time {
@@ -41,7 +40,6 @@
         
         a {
             text-decoration: underline;
-            // text-decoration-color: var(--cyan-500);
 
             transition: color 0.2s;
 
@@ -53,8 +51,10 @@
         pre {
             background-color: var(--gray-850);
             border-radius: 0.1rem;
+            padding: 1rem;
 
             font-size: 1rem;
+            max-width: 360px;
         }
 
         &.previewContent {
@@ -91,7 +91,6 @@
     }
 
     .post {
-        max-width: 580px;
         margin: 5rem auto 0;
 
         h1 {
